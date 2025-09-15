@@ -9,10 +9,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-<!-- Chosen Palette: Warm Neutrals -->
-<!-- Application Structure Plan: تم تصميم الموقع كصفحة واحدة (SPA) لتوفير تجربة مستخدم سلسة وسريعة. الهيكل يتبع تدفقًا منطقيًا: يبدأ بقسم تقديمي (Hero) لجذب الانتباه، يليه قسم "عني" لبناء علاقة شخصية مع القارئ، ثم القسم الرئيسي "المقالات" وهو جوهر الموقع. تم إضافة فلترة تفاعلية للمقالات لتمكين المستخدم من استكشاف المحتوى بسهولة حسب اهتماماته (تقنية، اقتصاد، مجتمع)، مما يحول تجربة التصفح من سلبية إلى تفاعلية. وأخيرًا، قسم "تواصل معي" وروابط التواصل الاجتماعي لتسهيل التواصل. هذا الهيكل يعطي الأولوية للمحتوى ويشجع على التفاعل. -->
-<!-- Visualization & Content Choices: الهدف الرئيسي هو عرض مقالات الكاتب. تم اختيار طريقة عرض "البطاقات" للمقالات لأنها تسمح بعرض العنوان ونبذة والمجال بشكل جذاب ومنظم. التفاعل الرئيسي هو نظام الفلترة عبر الأزرار، والذي يستخدم JavaScript لتحديث عرض المقالات ديناميكيًا بدون إعادة تحميل الصفحة. هذا الأسلوب أفضل من القوائم الثابتة لأنه يمنح المستخدم تحكمًا فوريًا في المحتوى المعروض. تم استخدام أيقونات بسيطة من خلال Unicode لوسائل التواصل الاجتماعي بدلاً من الصور للحفاظ على سرعة التحميل والبساطة. -->
-<!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
 <style>
 body {
 font-family: 'Tajawal', sans-serif;
@@ -194,12 +190,6 @@ box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.
                 link: "#"
             },
             {
-                title: "الأمن السيبراني: درعك في العالم الرقمي",
-                category: "تقنية",
-                excerpt: "Crook Catcher هو تطبيق أمان ذكي مصمم لالتقاط صور للمتطفلين أو اللصوص الذين يحاولون فتح هاتفك دون إذنك. يعمل التطبيق في الخلفية، وعندما يقوم شخص ما بإدخال رمز مرور خاطئ لعدد معين من المرات (يمكنك تحديده)، يقوم CrookCatcher بالتقاط صورة سرية باستخدام الكاميرا الأمامية للهاتف. لا يقتصر الأمر على التقاط الصورة فحسب، بل يقوم التطبيق أيضًا بتسجيل الموقع الجغرافي للجهاز ويرسل لك جميع هذه المعلومات عبر البريد الإلكتروني.",
-                link: "#"
-            },
-            {
                 title: "لحارس الأمين لهاتفك الذكي برنامج Crook Catcher",
                 category: "تقنية",
                 excerpt: "Crook Catcher هو تطبيق أمان ذكي مصمم لالتقاط صور للمتطفلين أو اللصوص الذين يحاولون فتح هاتفك دون إذنك. يعمل التطبيق في الخلفية، وعندما يقوم شخص ما بإدخال رمز مرور خاطئ لعدد معين من المرات (يمكنك تحديده)، يقوم CrookCatcher بالتقاط صورة سرية باستخدام الكاميرا الأمامية للهاتف. لا يقتصر الأمر على التقاط الصورة فحسب، بل يقوم التطبيق أيضًا بتسجيل الموقع الجغرافي للجهاز ويرسل لك جميع هذه المعلومات عبر البريد الإلكتروني.",
@@ -229,7 +219,7 @@ box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.
                         <span class="inline-block bg-gray-200 text-gray-700 text-sm font-semibold rounded-full px-3 py-1 mb-3">${article.category}</span>
                         <h3 class="text-xl font-bold mb-2">${article.title}</h3>
                         <p class="text-gray-600 mb-4">${article.excerpt}</p>
-                        <a href="${article.link}" class="font-semibold accent-color hover:underline">اقرأ المزيد &larr;</a>
+                        <a href="${article.link}" class="font-semibold accent-color hover:underline" target="_blank">اقرأ المزيد &larr;</a>
                     </div>
                 `;
                 articlesGrid.appendChild(articleEl);
