@@ -1,1 +1,271 @@
 
+
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>رجب البدوي | كاتب وباحث</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body {
+font-family: 'Tajawal', sans-serif;
+scroll-behavior: smooth;
+}
+.hero-bg {
+background-color: #F8F5F2;
+}
+.main-bg {
+background-color: #FFFFFF;
+}
+.accent-color {
+color: #4A5568;
+}
+.accent-bg {
+background-color: #4A5568;
+}
+.accent-bg-hover:hover {
+background-color: #2D3748;
+}
+.filter-btn {
+transition: all 0.3s ease;
+}
+.filter-btn.active {
+background-color: #4A5568;
+color: #FFFFFF;
+}
+.article-card {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.article-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+</style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<header id="header" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="text-2xl font-bold accent-color">
+            <a href="#home">رجب البدوي</a>
+        </div>
+        <div class="hidden md:flex space-x-8 space-x-reverse items-center">
+            <a href="#home" class="text-gray-600 hover:accent-color transition duration-300">الرئيسية</a>
+            <a href="#about" class="text-gray-600 hover:accent-color transition duration-300">عني</a>
+            <a href="#articles" class="text-gray-600 hover:accent-color transition duration-300">المقالات</a>
+            <a href="#contact" class="text-gray-600 hover:accent-color transition duration-300">تواصل معي</a>
+        </div>
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-white py-2">
+        <a href="#home" class="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-100">الرئيسية</a>
+        <a href="#about" class="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-100">عني</a>
+        <a href="#articles" class="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-100">المقالات</a>
+        <a href="#contact" class="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-100">تواصل معي</a>
+    </div>
+</header>
+
+<main>
+    <section id="home" class="hero-bg min-h-screen flex items-center">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold accent-color leading-tight mb-4">قلمٌ يكتب للمستقبل</h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto">أفكار ورؤى في التقنية والاقتصاد والمجتمع. محتوى هادف يضيف قيمة ومعرفة.</p>
+            <a href="#articles" class="accent-bg text-white font-bold py-3 px-8 rounded-full text-lg accent-bg-hover transition duration-300">
+                تصفح المقالات
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 main-bg">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold accent-color">عن الكاتب</h2>
+                <div class="w-24 h-1 accent-bg mx-auto mt-4"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <div class="md:w-1/3 text-center">
+                    <div class="w-48 h-48 mx-auto bg-gray-200 rounded-full flex items-center justify-center">
+                         <span class="text-6xl text-gray-400">ر</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mt-4">رجب البدوي</h3>
+                    <p class="text-gray-500">كاتب وباحث</p>
+                </div>
+                <div class="md:w-2/3 text-center md:text-right">
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                         كاتب وباحث في مجالات متعددة، أتنقل بين التقنية والاقتصاد والمجتمع، وأحرص على تبسيط المعلومة وتقديم محتوى هادف يضيف للقارئ قيمة ومعرفة عملية. أسعى من خلال كتاباتي إلى تحليل الظواهر المعاصرة وتقديم رؤى تساعد على فهم العالم المتغير من حولنا.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="articles" class="py-20 hero-bg">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold accent-color">أحدث المقالات</h2>
+                <p class="text-gray-600 mt-2">استكشف أحدث الكتابات في المجالات التي تهمك.</p>
+            </div>
+
+            <div id="filter-buttons" class="flex justify-center flex-wrap gap-4 mb-10">
+                <button class="filter-btn active bg-white text-gray-700 font-medium py-2 px-6 rounded-full shadow" data-filter="all">الكل</button>
+                <button class="filter-btn bg-white text-gray-700 font-medium py-2 px-6 rounded-full shadow" data-filter="تقنية">التقنية</button>
+                <button class="filter-btn bg-white text-gray-700 font-medium py-2 px-6 rounded-full shadow" data-filter="اقتصاد">الاقتصاد</button>
+                <button class="filter-btn bg-white text-gray-700 font-medium py-2 px-6 rounded-full shadow" data-filter="مجتمع">المجتمع</button>
+            </div>
+
+            <div id="articles-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 main-bg">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold accent-color">تواصل معي</h2>
+            <p class="text-gray-600 mt-2 mb-8">يسعدني تلقي آرائكم ومقترحاتكم، ويمكنكم متابعتي عبر المنصات التالية.</p>
+            <div class="flex justify-center space-x-6 space-x-reverse text-3xl">
+                <a href="#" class="text-gray-500 hover:accent-color transition duration-300" title="تويتر">𝕏</a>
+                <a href="#" class="text-gray-500 hover:accent-color transition duration-300" title="لينكدإن">in</a>
+                <a href="#" class="text-gray-500 hover:accent-color transition duration-300" title="البريد الإلكتروني">@</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="accent-bg text-white py-6">
+    <div class="container mx-auto px-6 text-center">
+        <p>&copy; 2025 جميع الحقوق محفوظة | رجب البدوي</p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const articles = [
+            {
+                title: "مستقبل الذكاء الاصطناعي: بين الفرص والمخاطر",
+                category: "تقنية",
+                excerpt: "نظرة تحليلية على كيفية تشكيل الذكاء الاصطناعي لمستقبلنا، والتحديات الأخلاقية التي يطرحها.",
+                link: "#"
+            },
+            {
+                title: "الاقتصاد الرقمي وتأثيره على نماذج العمل التقليدية",
+                category: "اقتصاد",
+                excerpt: "كيف يغير التحول الرقمي وجه الاقتصاد العالمي، وما هي استراتيجيات التكيف المطلوبة للشركات والأفراد؟",
+                link: "#"
+            },
+            {
+                title: "الهوية الرقمية في عصر التواصل الاجتماعي",
+                category: "مجتمع",
+                excerpt: "تحليل لأثر منصات التواصل على تشكيل هويتنا الفردية والجماعية، وكيف ندير حضورنا الرقمي بوعي.",
+                link: "#"
+            },
+            {
+                title: "ثورة الحوسبة السحابية: أكثر من مجرد تخزين",
+                category: "تقنية",
+                excerpt: "استعراض للإمكانيات الهائلة التي توفرها الحوسبة السحابية للابتكار وتسريع نمو الشركات.",
+                link: "#"
+            },
+            {
+                title: "العملات المشفرة: هل هي فقاعة أم مستقبل المال؟",
+                category: "اقتصاد",
+                excerpt: "نقاش موضوعي حول تقنية البلوك تشين ومستقبل العملات الرقمية كأصل استثماري ووسيلة للتبادل.",
+                link: "#"
+            },
+            {
+                title: "التعليم عن بعد: تحديات ما بعد الجائحة",
+                category: "مجتمع",
+                excerpt: "تقييم لتجربة التعليم الرقمي، والدروس المستفادة لإنشاء نظام تعليمي هجين وفعال للمستقبل.",
+                link: "#"
+            },
+            {
+                title: "مفهوم اقتصاد المشاركة وتأثيره على المستهلكين",
+                category: "اقتصاد",
+                excerpt: "دراسة لكيفية تغيير خدمات مثل أوبر وإيربنبى لسلوكياتنا الاستهلاكية وعلاقتنا بالملكية.",
+                link: "#"
+            },
+            {
+                title: "لحارس الأمين لهاتفك الذكي برنامج Crook Catcher",
+                category: "تقنية",
+                excerpt: "Crook Catcher هو تطبيق أمان ذكي مصمم لالتقاط صور للمتطفلين أو اللصوص الذين يحاولون فتح هاتفك دون إذنك. يعمل التطبيق في الخلفية، وعندما يقوم شخص ما بإدخال رمز مرور خاطئ لعدد معين من المرات (يمكنك تحديده)، يقوم CrookCatcher بالتقاط صورة سرية باستخدام الكاميرا الأمامية للهاتف. لا يقتصر الأمر على التقاط الصورة فحسب، بل يقوم التطبيق أيضًا بتسجيل الموقع الجغرافي للجهاز ويرسل لك جميع هذه المعلومات عبر البريد الإلكتروني.",
+                link: "https://tinyurl.com/catchcrooker"
+            }
+        ];
+
+        const articlesGrid = document.getElementById('articles-grid');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        
+        function renderArticles(filter = 'all') {
+            articlesGrid.innerHTML = '';
+            const filteredArticles = filter === 'all' 
+                ? articles 
+                : articles.filter(article => article.category === filter);
+
+            if (filteredArticles.length === 0) {
+                articlesGrid.innerHTML = `<p class="text-center text-gray-500 col-span-full">لا توجد مقالات في هذا التصنيف حاليًا.</p>`;
+                return;
+            }
+            
+            filteredArticles.forEach(article => {
+                const articleEl = document.createElement('div');
+                articleEl.className = 'article-card bg-white rounded-lg shadow-lg overflow-hidden';
+                articleEl.innerHTML = `
+                    <div class="p-6">
+                        <span class="inline-block bg-gray-200 text-gray-700 text-sm font-semibold rounded-full px-3 py-1 mb-3">${article.category}</span>
+                        <h3 class="text-xl font-bold mb-2">${article.title}</h3>
+                        <p class="text-gray-600 mb-4">${article.excerpt}</p>
+                        <a href="${article.link}" class="font-semibold accent-color hover:underline" target="_blank">اقرأ المزيد &larr;</a>
+                    </div>
+                `;
+                articlesGrid.appendChild(articleEl);
+            });
+        }
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                const filterValue = button.getAttribute('data-filter');
+                renderArticles(filterValue);
+            });
+        });
+
+        renderArticles();
+        
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = mobileMenu.querySelectorAll('a');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        let lastScrollTop = 0;
+        const header = document.getElementById('header');
+        window.addEventListener("scroll", function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScroll > lastScrollTop) {
+                header.style.top = "-100px";
+            } else {
+                header.style.top = "0";
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        }, false);
+    });
+</script>
+
+</body>
+</html>
